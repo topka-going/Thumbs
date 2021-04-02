@@ -1,0 +1,389 @@
+﻿<Window x:Class="Thumbs.Window6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Thumbs"
+        mc:Ignorable="d"
+        Title="Window6" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!--head-->
+
+        <Border 
+            Grid.Row="0"
+            Grid.ColumnSpan="2" 
+            Background="#FF505050"
+            >
+            <Button x:Name="Login"
+            Style="{StaticResource RoundButtonTemplate}"
+            Content="Назад"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            Width="70"
+            Height="35" 
+            RenderTransformOrigin="0,0" 
+            Margin="40 0 0 0" Click="Login_Click"/>
+        </Border>
+        <TextBlock
+            Grid.Row="0"
+            Grid.RowSpan="1"
+            Grid.ColumnSpan="2"
+            Text="MARATHON SKILLS 2016"
+            Foreground="White"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="20" 
+            FontWeight="Bold"
+            Margin=" 150 0 0 0"
+            FontFamily="Open Sans Semibold"
+            />
+
+        <!--body-->
+        <TextBlock
+            Grid.Row="1"
+            Grid.ColumnSpan="2"
+            Text="Спонсор бегуна"
+            Foreground="#505050"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="20"
+            FontFamily="Open Sans Semibold" OpacityMask="{x:Null}"
+            />
+
+        <TextBlock
+            Grid.Row="2"
+            Grid.ColumnSpan="2"
+            Text="Пожалуйста выберите бегуна,которого вы хотели бы спонсировать и сумму, &#10;
+            которую вы хотели бы спонсировать. Спасибо за вашу поддержку бегунов &#10;
+            и их благотворительных учреждений."
+            Foreground="#505050"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="13"
+            FontFamily="Open Sans Light" TextAlignment="Center"
+            />
+
+        <TextBlock
+            Grid.Row="3"
+            Grid.Column="0"
+            Text="Информация о Спонсоре"
+            Foreground="#505050"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="15"
+            FontFamily="Open Sans Light"
+            TextAlignment="Center" 
+            FontWeight="Bold"
+            />
+
+        <TextBlock
+            Grid.Row="4"
+            Grid.Column="0"
+            Text="Ваше имя:"
+            Foreground="#505050"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="12"
+            FontFamily="Open Sans Light"
+            TextAlignment="Center"
+            Margin="50 0 0 0"
+            />
+        <TextBox  Grid.Row="4"
+            Grid.Column="0"
+            Text="Ваше имя:"
+            Foreground="#99505050"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            FontSize="12"
+            FontFamily="Open Sans Light"
+            TextAlignment="Center"
+            Width="150"
+            Margin="0 0 120 0" FontStyle="Italic"/>
+
+        <TextBlock
+            Grid.Row="5"
+            Grid.Column="0"
+            Text="Бегун:"
+            Foreground="#505050"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="12"
+            FontFamily="Open Sans Light"
+            TextAlignment="Center"
+            Margin="50 0 0 0"
+            />
+
+        <ComboBox  Grid.Row="5"
+            Grid.Column="0"
+            Text="Иван Прудов- 204 (Russia)"
+            Foreground="#99505050"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            FontSize="12"
+            FontFamily="Open Sans Light"
+            Width="150"
+            Margin="0 0 120 0" FontStyle="Italic" />
+
+
+        <TextBlock
+            Grid.Row="6"
+            Grid.Column="0"
+            Text="Карта:"
+            Foreground="#505050"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="12"
+            FontFamily="Open Sans Light"
+            TextAlignment="Center"
+            Margin="50 0 0 0"
+            />
+        <TextBox  Grid.Row="6"
+            Grid.Column="0"
+            Text="Владелец карты:"
+            Foreground="#99505050"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            FontSize="12"
+            FontFamily="Open Sans Light"
+            TextAlignment="Center"
+            Width="150"
+            Margin="0 0 120 0" FontStyle="Italic"/>
+
+        <TextBlock
+            Grid.Row="7"
+            Grid.Column="0"
+            Text="Номер карты:"
+            Foreground="#505050"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="12"
+            FontFamily="Open Sans Light"
+            TextAlignment="Center"
+            Margin="50 0 0 0"
+            />
+        <TextBox  Grid.Row="7"
+            Grid.Column="0"
+            Text="1234 1234 1234 1234"
+            Foreground="#99505050"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            FontSize="12"
+            FontFamily="Open Sans Light"
+            TextAlignment="Center"
+            Width="150"
+            Margin="0 0 120 0" FontStyle="Italic"/>
+
+        <TextBlock
+            Grid.Row="8"
+            Grid.Column="0"
+            Text="Срок действия:"
+            Foreground="#505050"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="12"
+            FontFamily="Open Sans Light"
+            TextAlignment="Center"
+            Margin="50 0 0 0"
+            />
+        <TextBox  Grid.Row="8"
+            Grid.Column="0"
+            Text="01"
+            Foreground="#99505050"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="12"
+            FontFamily="Open Sans Light"
+            TextAlignment="Center"
+            Width="50"
+            Margin="140 0 120 0" FontStyle="Italic"/>
+        <TextBox  Grid.Row="8"
+            Grid.Column="0"
+            Text="2017"
+            Foreground="#99505050"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="12"
+            FontFamily="Open Sans Light"
+            TextAlignment="Center"
+            Width="50"
+            Margin="200 0 120 0" FontStyle="Italic"/>
+
+        <TextBlock
+            Grid.Row="8"
+            Grid.Column="0"
+            Text="CVC:"
+            Foreground="#505050"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            FontSize="12"
+            FontFamily="Open Sans Light"
+            TextAlignment="Center"
+            Margin="0 0 100 0"
+            />
+        <TextBox  Grid.Row="8"
+            Grid.Column="0"
+            Text="123"
+            Foreground="#99505050"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            FontSize="12"
+            FontFamily="Open Sans Light"
+            TextAlignment="Center"
+            Width="50"
+            Margin="0 0 45 0" FontStyle="Italic"/>
+
+
+
+
+
+        <TextBlock
+            Grid.Row="4"
+            Grid.Column="1"
+            Text="Фонд кошек"
+            Foreground="#505050"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="15"
+            FontFamily="Open Sans Light" 
+            TextAlignment="Center"
+            />
+
+        <TextBlock
+            Grid.Row="3"
+            Grid.Column="1"
+            Text="Благотворительность"
+            Foreground="#505050"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="15"
+            FontFamily="Open Sans Light" 
+            TextAlignment="Center"
+            FontWeight="Bold"
+            />
+
+        <TextBlock
+            Grid.Row="5"
+            Grid.Column="1"
+            Text="Сумма пожертвования"
+            Foreground="#505050"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="15"
+            FontFamily="Open Sans Light" 
+            TextAlignment="Center"
+            FontWeight="Bold"
+            />
+
+        <TextBlock
+            Grid.Row="6"
+            Grid.Column="1"
+            Text="$50"
+            Foreground="#505050"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="15"
+            FontFamily="Open Sans Light" 
+            TextAlignment="Center"
+            />
+
+        <TextBox  Grid.Row="7"
+            Grid.Column="1"
+            Text="50"
+            Foreground="#99505050"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="12"
+            FontFamily="Open Sans Light"
+            TextAlignment="Center"
+            Width="50"
+            FontStyle="Italic"/>
+        <Button x:Name="btn16"
+            Style="{StaticResource RoundButtonTemplate}"
+            Grid.Row="7"
+            Grid.Column="1"
+            Content="+"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Width="17"
+            Height="17"  
+            Margin="228,12,151,11" 
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"/>
+
+        <Button x:Name="btn26"
+            Style="{StaticResource RoundButtonTemplate}"
+            Grid.Row="7"
+            Grid.Column="1"
+            Content="-"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Width="17"
+            Height="17" 
+            Margin="151,12,228,11" 
+            />
+
+        <Button x:Name="btn36"
+            Style="{StaticResource RoundButtonTemplateWindow6}"
+            Grid.Row="8"
+            Grid.Column="1"
+            Content="Заполнить"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Width="70"
+            Height="25" Margin="98.2,6.2,228.6,10.4"  
+            />
+
+        <!--Footer-->
+        <Border
+            Grid.Row="9"
+            Grid.ColumnSpan="2"
+            Background="#FF505050" />
+
+        <TextBlock
+            x:Name="FooTime6"
+            Grid.Row="9"
+            Grid.ColumnSpan="2"
+            Text="18 дней 8 часов и 17 минут до старта марафона!"
+            Foreground="White"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="20" 
+            FontWeight="Bold"
+            FontFamily="Open Sans Semibold"/>
+        <Button x:Name="btn36_Copy"
+            Style="{StaticResource RoundButtonTemplateWindow6}"
+            Grid.Row="8"
+            Grid.Column="1"
+            Content="Отмена"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Width="70"
+            Height="25" Margin="228.2,6.2,98.6,10.4"  
+            />
+        <Button x:Name="btn36_Copy1"
+            Grid.Row="4"
+                Content="Круглая_кнопка"
+            Grid.Column="1"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Width="70"
+            Height="25" Margin="289.2,10.4,37.6,7"  
+            />
+    </Grid>
+</Window>
